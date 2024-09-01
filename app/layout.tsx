@@ -8,6 +8,7 @@ import Footer from "./components/footer";
 import { ContactContextProvider } from "./context/contact-context";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -69,6 +70,7 @@ export default function RootLayout({
           </div>
         </ContactContextProvider>
       </body>
+      <GoogleAnalytics gaId={process?.env?.NEXT_PUBLIC_GA_ID ?? ""} />
     </html>
   );
 }
