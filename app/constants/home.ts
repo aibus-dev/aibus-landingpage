@@ -423,7 +423,7 @@ export const socialList = [
   {
     icon: "/images/telegram.svg",
     name: "+84 98 420 8895",
-    link: "https://t.me/mira_nguyen",
+    link: "https://t.me/daryl_npt",
   },
   {
     icon: "/images/whatsapp.svg",
